@@ -1,0 +1,252 @@
+html  {
+   scroll-behavior: smooth;
+}
+
+body  {
+   font-family:'Open Sans', sans-serif;
+   color: black;
+   font-size: 18x;
+   font-weight: 400;
+   margin: 0;
+   padding: 0;
+}
+
+*  {
+   box-sizing: border-box;
+}
+
+.container  {
+   max-width: 1110px;
+   margin: 0 auto;
+}
+
+section  {
+   padding-top: 120px;
+}
+
+p  {
+   line-height: 1.37em;
+   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6  {
+   font-weight: 700;
+   line-height: 1.4em;
+   margin: 0;
+}
+
+.header  {
+   padding-top: 60px;
+}
+
+.logo {
+   display: block;
+   margin: 0 auto;
+   max-width: 145px;
+}
+
+h1  {
+   font-size: 50px;
+}
+
+h2  {
+   font-size: 40px;
+   text-align: center;
+   margin-bottom: 70px;
+}
+
+.hero-image   {
+   width: 465px;
+}
+
+.intro   {
+   font-size: 18px;
+   margin: 30px 0;
+}
+
+.button  {
+   background: #000000;
+   border-radius: 100px;
+   font-size: 18px;
+   color: #fff;
+   text-decoration: none;
+   padding: 22px 0;
+   font-weight: 700;
+   line-height: 1.19em;
+   display: block;
+   width: 216px;
+   text-align: center;
+   transition: all 0.5s ease;
+}
+
+.button:hover  {
+   background: rgb(41, 41, 41);
+   width: 300px;
+}
+
+.hero-text   {
+   width: 465px;
+}
+
+.hero-text h2  {
+   text-align: left;
+   margin-bottom: 0;
+}
+
+.action-wrap .hero-text   {
+   width: 432px;
+}
+
+.action-wrap .intro {
+   margin: 24px 0;
+   width: 371px;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 79px;
+}
+
+.features-container  {
+   width: 720px;
+   display: flex;
+   flex-direction: column;
+   gap: 41px;
+   margin: 0 auto;
+}
+
+.feature {
+   display: flex;
+   gap: 34px;
+   align-items: center;
+}
+
+.feature-digit {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.37em;
+   border: 1px solid #000000;
+   border-radius: 20px;
+   width: 77px;
+   height: 77px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s ease;
+}
+
+.feature:hover .feature-digit {
+   background: #000000;
+   color: #fff;
+}
+
+
+.feature-title {
+   font-size: 30px;
+   margin-bottom: 11px;
+}
+
+.action-wrap   {
+   background: linear-gradient(102deg, #E8FFE8 17.38%, #D1F0FF 81.25%);
+   border-radius: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 93px 168px 83px 122px;
+   gap: 101px;
+}
+
+@keyframes rot {
+   
+   0% { transform: scale(1,1) translateY(-60); 
+   } 
+   10% { 
+      transform: scale(1,.9) translateY(-100); 
+   } 
+   50% { 
+      transform: scale(.9,1) translateY(-200px); 
+   } 
+   70% { 
+      transform: scale(1,1) translateY(-10); 
+   } 
+   100% { 
+      transform: scale(1.03,1) translateY(0); 
+   } 
+} 
+
+.action-wrap img  {
+   animation: 3s linear 0s normal none infinite running rot;
+   animation-timing-function: ease;
+   
+}
+
+.footer  {
+   padding: 120px 0;
+}
+
+.credits {
+   font-size: 15px;
+   text-align: center;
+}
+
+.stage {
+    border-bottom: 3px solid #444; 
+    display: flex; 
+    height: 330px; 
+    width: 100%; 
+   } 
+.box { 
+   align-self: flex-end; 
+   animation-duration: 2s; 
+   animation-iteration-count: infinite; 
+   background-color: #F44336; 
+   height: 200px; 
+   margin: 0 auto 0 auto; 
+   transform-origin: bottom; 
+   width: 200px; 
+   } 
+.bounce-7 { 
+   animation-name: bounce-7; 
+   animation-timing-function: ease;
+   } 
+ 
+   @keyframes bounce-7 { 
+      0% { transform: scale(1,1) translateY(0); 
+      } 
+      10% { 
+         transform: scale(1.1,.9) translateY(0); 
+      } 
+      50% { 
+         transform: scale(.9,1.1) translateY(-100px); 
+      } 
+      80% { 
+         transform: scale(1,1) translateY(-7px); 
+      }
+      100% { 
+         transform: scale(1,1) translateY(0); 
+      } 
+   }
+ 
+   /*
+   @keyframes bounce-7 { 
+   0% { transform: scale(1,1) translateY(0); 
+   } 
+   10% { 
+      transform: scale(1.1,.9) translateY(0); 
+   } 
+   30% { 
+      transform: scale(.9,1.1) translateY(-100px); 
+   } 
+   50% { 
+      transform: translateY(0); 
+   }
+    57% { 
+      transform: scale(1,1) translateY(-7px); 
+   }
+    64% { transform: scale(1,1) translateY(0); 
+   } 
+   100% { transform: scale(1,1) translateY(0); } 
+}
+*/
